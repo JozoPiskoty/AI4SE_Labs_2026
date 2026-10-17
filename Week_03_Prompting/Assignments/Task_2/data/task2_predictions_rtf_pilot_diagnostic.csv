@@ -1,0 +1,31 @@
+question,predicted_sql,framework,model_id,generation_time_seconds,generation_status,error,attempt_count,session_id,request_id
+What is the best place in winters for tea food ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'winters'
+  AND FOOD_TYPE = 'tea'
+ORDER BY RATING DESC
+LIMIT 1;",RTF,gpt-6-luna,3.209000,SUCCESS,,1,0c11f6d4-cb69-408f-8c5d-79f672081c8a,e6358503-37f0-4c23-94d2-abbd48ae46d2
+What is the best place in moraga for european food ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'moraga'
+  AND FOOD_TYPE = 'european'
+ORDER BY RATING DESC
+LIMIT 1;",RTF,gpt-6-luna,2.307000,SUCCESS,,1,0c11f6d4-cb69-408f-8c5d-79f672081c8a,1ae9058e-9149-4854-b7e7-70eb25ec5d36
+What is the best place in eagan for egyptian food ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'eagan'
+  AND FOOD_TYPE = 'egyptian'
+ORDER BY RATING DESC
+LIMIT 1;",RTF,gpt-6-luna,1.883000,SUCCESS,,1,0c11f6d4-cb69-408f-8c5d-79f672081c8a,ad32a8b4-b469-4be5-9ae4-eded4efc2f14
+What is the best place in atherton for burmese food ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'atherton'
+  AND FOOD_TYPE = 'burmese'
+ORDER BY RATING DESC
+LIMIT 1;",RTF,gpt-6-luna,2.359000,SUCCESS,,1,0c11f6d4-cb69-408f-8c5d-79f672081c8a,78bab55a-81db-4aa6-aabf-0ab79fc8d1b9
+"What is the best place in tahoe city for potatoes food, and I have not settled whether pasta belongs in a lunchbox or a flowerpot?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'tahoe city'
+  AND FOOD_TYPE = 'potatoes'
+ORDER BY RATING DESC
+LIMIT 1;",RTF,gpt-6-luna,3.712000,SUCCESS,,1,0c11f6d4-cb69-408f-8c5d-79f672081c8a,c2e4f2a9-9413-456d-89f2-19f884650031

@@ -1,0 +1,39 @@
+{
+  "experiment_started_utc": "2026-10-17T12:54:31.258087+00:00",
+  "copilot_cli_version": "GitHub Copilot CLI 1.0.98. Run 'copilot update' to check for updates.",
+  "model_setting": "auto",
+  "model_selection_note": "The user explicitly approved Copilot Auto routing after the authenticated model catalog exposed only `auto`. The exact model ID is recorded for every completed response and may vary.",
+  "prompt_sha256": {
+    "RTF": "07b39f77b81dd0db521a0e05e8976e84e1ce62f2a7804e990d52b6d6f291e9d8",
+    "ICIO": "62f8f92362d389c668b90e06fee868b7cb558fccebe845c0e23de94599f7b189",
+    "CRISP": "b6dafd07ebc163e371b990460ae86fffd67f0013206106be108f0d77ad84187e"
+  },
+  "sessions": {
+    "RTF": {
+      "session_id": "2b34ae28-211f-492f-90c6-6094aa39140c",
+      "agent_name": "task2-rtf",
+      "actual_model_ids": [
+        "gpt-6-luna"
+      ],
+      "completed_rows": 155
+    },
+    "ICIO": {
+      "session_id": "7bed5495-3028-4110-82f3-527ddf8c4c2c",
+      "agent_name": "task2-icio",
+      "actual_model_ids": [
+        "gpt-6-luna"
+      ],
+      "completed_rows": 155
+    },
+    "CRISP": {
+      "session_id": "4b93a871-18b2-4f04-b52a-e49dda6383fb",
+      "agent_name": "task2-crisp",
+      "actual_model_ids": [
+        "gpt-6-luna"
+      ],
+      "completed_rows": 155
+    }
+  },
+  "last_updated_utc": "2026-10-17T13:46:48.601533+00:00",
+  "experiment_finished_utc": "2026-10-17T13:46:48.601518+00:00"
+}

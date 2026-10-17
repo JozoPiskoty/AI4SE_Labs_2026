@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="390" viewBox="0 0 760 390">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="380" y="25" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Mean Multiset Jaccard Similarity</text>
+<line x1="80" y1="295.0" x2="700" y2="295.0" stroke="#d9e0e8"/>
+<text x="68" y="299.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">0%</text>
+<line x1="80" y1="245.0" x2="700" y2="245.0" stroke="#d9e0e8"/>
+<text x="68" y="249.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">20%</text>
+<line x1="80" y1="195.0" x2="700" y2="195.0" stroke="#d9e0e8"/>
+<text x="68" y="199.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">40%</text>
+<line x1="80" y1="145.0" x2="700" y2="145.0" stroke="#d9e0e8"/>
+<text x="68" y="149.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">60%</text>
+<line x1="80" y1="95.0" x2="700" y2="95.0" stroke="#d9e0e8"/>
+<text x="68" y="99.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">80%</text>
+<line x1="80" y1="45.0" x2="700" y2="45.0" stroke="#d9e0e8"/>
+<text x="68" y="49.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">100%</text>
+<rect x="130" y="225.6" width="110" height="69.4" rx="5" fill="#3b82f6"/>
+<text x="185.0" y="217.6" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">0.277420</text>
+<text x="185.0" y="318" text-anchor="middle" font-family="Arial" font-size="14">RTF</text>
+<text x="185.0" y="338" text-anchor="middle" font-family="Arial" font-size="11" fill="#445">43/155 exact</text>
+<rect x="320" y="225.6" width="110" height="69.4" rx="5" fill="#10b981"/>
+<text x="375.0" y="217.6" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">0.277420</text>
+<text x="375.0" y="318" text-anchor="middle" font-family="Arial" font-size="14">ICIO</text>
+<text x="375.0" y="338" text-anchor="middle" font-family="Arial" font-size="11" fill="#445">43/155 exact</text>
+<rect x="510" y="225.6" width="110" height="69.4" rx="5" fill="#f59e0b"/>
+<text x="565.0" y="217.6" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">0.277420</text>
+<text x="565.0" y="318" text-anchor="middle" font-family="Arial" font-size="14">CRISP</text>
+<text x="565.0" y="338" text-anchor="middle" font-family="Arial" font-size="11" fill="#445">43/155 exact</text>
+</svg>

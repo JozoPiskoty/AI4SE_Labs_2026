@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="390" viewBox="0 0 760 390">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="380" y="24" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Generation time per completed response</text>
+<line x1="80" y1="290.0" x2="700" y2="290.0" stroke="#d9e0e8"/>
+<text x="70" y="294.0" text-anchor="end" font-family="Arial" font-size="11" fill="#445">0.0</text>
+<line x1="80" y1="241.0" x2="700" y2="241.0" stroke="#d9e0e8"/>
+<text x="70" y="245.0" text-anchor="end" font-family="Arial" font-size="11" fill="#445">0.7</text>
+<line x1="80" y1="192.0" x2="700" y2="192.0" stroke="#d9e0e8"/>
+<text x="70" y="196.0" text-anchor="end" font-family="Arial" font-size="11" fill="#445">1.4</text>
+<line x1="80" y1="143.0" x2="700" y2="143.0" stroke="#d9e0e8"/>
+<text x="70" y="147.0" text-anchor="end" font-family="Arial" font-size="11" fill="#445">2.1</text>
+<line x1="80" y1="94.0" x2="700" y2="94.0" stroke="#d9e0e8"/>
+<text x="70" y="98.0" text-anchor="end" font-family="Arial" font-size="11" fill="#445">2.8</text>
+<line x1="80" y1="45.0" x2="700" y2="45.0" stroke="#d9e0e8"/>
+<text x="70" y="49.0" text-anchor="end" font-family="Arial" font-size="11" fill="#445">3.5</text>
+<rect x="134" y="93.6" width="40" height="196.4" rx="4" fill="#6366f1"/>
+<text x="154" y="87.6" text-anchor="middle" font-family="Arial" font-size="10">2.79</text>
+<rect x="187" y="98.2" width="40" height="191.8" rx="4" fill="#14b8a6"/>
+<text x="207" y="92.2" text-anchor="middle" font-family="Arial" font-size="10">2.72</text>
+<text x="180" y="312" text-anchor="middle" font-family="Arial" font-size="14">RTF</text>
+<rect x="319" y="77.0" width="40" height="213.0" rx="4" fill="#6366f1"/>
+<text x="339" y="71.0" text-anchor="middle" font-family="Arial" font-size="10">3.02</text>
+<rect x="372" y="94.8" width="40" height="195.2" rx="4" fill="#14b8a6"/>
+<text x="392" y="88.8" text-anchor="middle" font-family="Arial" font-size="10">2.77</text>
+<text x="365" y="312" text-anchor="middle" font-family="Arial" font-size="14">ICIO</text>
+<rect x="504" y="86.8" width="40" height="203.2" rx="4" fill="#6366f1"/>
+<text x="524" y="80.8" text-anchor="middle" font-family="Arial" font-size="10">2.88</text>
+<rect x="557" y="95.7" width="40" height="194.3" rx="4" fill="#14b8a6"/>
+<text x="577" y="89.7" text-anchor="middle" font-family="Arial" font-size="10">2.76</text>
+<text x="550" y="312" text-anchor="middle" font-family="Arial" font-size="14">CRISP</text>
+<rect x="245" y="347" width="13" height="13" fill="#6366f1"/><text x="264" y="358" font-family="Arial" font-size="12">Mean</text>
+<rect x="335" y="347" width="13" height="13" fill="#14b8a6"/><text x="354" y="358" font-family="Arial" font-size="12">Median</text>
+<text x="20" y="175" transform="rotate(-90 20 175)" text-anchor="middle" font-family="Arial" font-size="12">Seconds</text>
+</svg>

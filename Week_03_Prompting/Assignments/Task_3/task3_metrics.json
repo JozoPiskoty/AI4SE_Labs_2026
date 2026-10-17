@@ -1,0 +1,61 @@
+{
+  "metric": "Multiset Jaccard Similarity",
+  "metric_definition": "sum_r min(c_A(r), c_B(r)) / sum_r max(c_A(r), c_B(r)); defined as 1 when both multisets are empty",
+  "complements_exact_accuracy": true,
+  "denominator_per_framework": 155,
+  "source_data": {
+    "labels": "Task_2\\data\\restaurants_dataset.csv",
+    "predictions": [
+      "Task_2\\data\\task2_predictions_rtf.csv",
+      "Task_2\\data\\task2_predictions_icio.csv",
+      "Task_2\\data\\task2_predictions_crisp.csv"
+    ],
+    "database_loader": "evaluate_retrieval_predictions.py:load_database",
+    "task2_accuracy_cross_check": "Task_2\\data\\task2_metrics.json"
+  },
+  "evaluated_utc": "2026-10-17T15:58:23.225680+00:00",
+  "summaries": [
+    {
+      "framework": "RTF",
+      "total_questions": 155,
+      "mean_multiset_jaccard_similarity": 0.2774204073613433,
+      "median_multiset_jaccard_similarity": 0.0,
+      "perfect_similarity_count": 43,
+      "partial_similarity_count": 1,
+      "zero_similarity_count": 111,
+      "sql_execution_errors": 0,
+      "failed_predictions": 0,
+      "accuracy_correct": 43,
+      "accuracy": 0.27741935483870966,
+      "accuracy_source": "Task 2 authoritative evaluator; independently cross-checked"
+    },
+    {
+      "framework": "ICIO",
+      "total_questions": 155,
+      "mean_multiset_jaccard_similarity": 0.2774204073613433,
+      "median_multiset_jaccard_similarity": 0.0,
+      "perfect_similarity_count": 43,
+      "partial_similarity_count": 1,
+      "zero_similarity_count": 111,
+      "sql_execution_errors": 0,
+      "failed_predictions": 0,
+      "accuracy_correct": 43,
+      "accuracy": 0.27741935483870966,
+      "accuracy_source": "Task 2 authoritative evaluator; independently cross-checked"
+    },
+    {
+      "framework": "CRISP",
+      "total_questions": 155,
+      "mean_multiset_jaccard_similarity": 0.2774204073613433,
+      "median_multiset_jaccard_similarity": 0.0,
+      "perfect_similarity_count": 43,
+      "partial_similarity_count": 1,
+      "zero_similarity_count": 111,
+      "sql_execution_errors": 0,
+      "failed_predictions": 0,
+      "accuracy_correct": 43,
+      "accuracy": 0.27741935483870966,
+      "accuracy_source": "Task 2 authoritative evaluator; independently cross-checked"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "evaluated_utc": "2026-10-17T15:31:01.633853+00:00",
+  "accuracy_denominator": 155,
+  "accuracy_evaluator": {
+    "file": "evaluate_retrieval_predictions.py",
+    "sha256": "c3d2cc5f3ce1bfd485cfe7d49a87939df84f0bcb2d250fef69445fe9524acb59",
+    "authoritative": true,
+    "execution_method": "Original evaluator run in one isolated temporary directory per framework with copied inputs."
+  },
+  "metrics": [
+    {
+      "framework": "RTF",
+      "total_questions": 155,
+      "generated_successfully": 155,
+      "correct": 43,
+      "accuracy": 0.2774,
+      "accuracy_percent": 27.74,
+      "accuracy_source": "evaluate_retrieval_predictions.py",
+      "accuracy_source_output": "Accuracy: 0.2774 (27.74%)\nCorrect: 43/155",
+      "mean_generation_time_seconds": 2.785464516129032,
+      "median_generation_time_seconds": 2.721,
+      "timed_successful_generations": 155,
+      "failed_generations": 0,
+      "sql_execution_errors": 0,
+      "sql_execution_errors_basis": "Zero observed because the original evaluator completed all 155 prediction queries successfully.",
+      "actual_model_ids": {
+        "gpt-6-luna": 155
+      },
+      "errors": [],
+      "prior_metrics_comparison": {
+        "previous_correct": 43,
+        "previous_accuracy": 0.2774,
+        "matches_previous_results": true
+      }
+    },
+    {
+      "framework": "ICIO",
+      "total_questions": 155,
+      "generated_successfully": 155,
+      "correct": 43,
+      "accuracy": 0.2774,
+      "accuracy_percent": 27.74,
+      "accuracy_source": "evaluate_retrieval_predictions.py",
+      "accuracy_source_output": "Accuracy: 0.2774 (27.74%)\nCorrect: 43/155",
+      "mean_generation_time_seconds": 3.0221290322580647,
+      "median_generation_time_seconds": 2.769,
+      "timed_successful_generations": 155,
+      "failed_generations": 0,
+      "sql_execution_errors": 0,
+      "sql_execution_errors_basis": "Zero observed because the original evaluator completed all 155 prediction queries successfully.",
+      "actual_model_ids": {
+        "gpt-6-luna": 155
+      },
+      "errors": [],
+      "prior_metrics_comparison": {
+        "previous_correct": 43,
+        "previous_accuracy": 0.2774,
+        "matches_previous_results": true
+      }
+    },
+    {
+      "framework": "CRISP",
+      "total_questions": 155,
+      "generated_successfully": 155,
+      "correct": 43,
+      "accuracy": 0.2774,
+      "accuracy_percent": 27.74,
+      "accuracy_source": "evaluate_retrieval_predictions.py",
+      "accuracy_source_output": "Accuracy: 0.2774 (27.74%)\nCorrect: 43/155",
+      "mean_generation_time_seconds": 2.8828967741935485,
+      "median_generation_time_seconds": 2.756,
+      "timed_successful_generations": 155,
+      "failed_generations": 0,
+      "sql_execution_errors": 0,
+      "sql_execution_errors_basis": "Zero observed because the original evaluator completed all 155 prediction queries successfully.",
+      "actual_model_ids": {
+        "gpt-6-luna": 155
+      },
+      "errors": [],
+      "prior_metrics_comparison": {
+        "previous_correct": 43,
+        "previous_accuracy": 0.2774,
+        "matches_previous_results": true
+      }
+    }
+  ]
+}

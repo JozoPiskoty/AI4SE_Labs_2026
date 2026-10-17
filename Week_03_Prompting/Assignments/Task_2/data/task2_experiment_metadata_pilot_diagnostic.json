@@ -1,0 +1,39 @@
+{
+  "run_type": "incomplete diagnostic pilot; not part of the final benchmark",
+  "benchmark_complete": false,
+  "experiment_started_utc": "2026-10-17T12:37:33.258136+00:00",
+  "copilot_cli_version": "GitHub Copilot CLI 1.0.98. Run 'copilot update' to check for updates.",
+  "model_setting": "auto",
+  "model_selection_note": "Automatic routing selected gpt-6-luna for all five RTF pilot responses. Explicit CLI selection of gpt-6-luna was rejected. The SDK model list returned only auto.",
+  "prompt_sha256": {
+    "RTF": "07b39f77b81dd0db521a0e05e8976e84e1ce62f2a7804e990d52b6d6f291e9d8",
+    "ICIO": "62f8f92362d389c668b90e06fee868b7cb558fccebe845c0e23de94599f7b189",
+    "CRISP": "b6dafd07ebc163e371b990460ae86fffd67f0013206106be108f0d77ad84187e"
+  },
+  "sessions": {
+    "RTF": {
+      "session_id": "0c11f6d4-cb69-408f-8c5d-79f672081c8a",
+      "session_created": true,
+      "agent_name": "task2-rtf",
+      "actual_model_ids": [
+        "gpt-6-luna"
+      ],
+      "completed_rows": 5
+    },
+    "ICIO": {
+      "session_id": null,
+      "session_created": false,
+      "agent_name": "task2-icio",
+      "actual_model_ids": [],
+      "completed_rows": 0
+    },
+    "CRISP": {
+      "session_id": null,
+      "session_created": false,
+      "agent_name": "task2-crisp",
+      "actual_model_ids": [],
+      "completed_rows": 0
+    }
+  },
+  "last_updated_utc": "2026-10-17T12:38:58.546224+00:00"
+}

@@ -1,0 +1,444 @@
+{
+  "analysis_timestamp_utc": "2026-10-17T16:35:03.325059+00:00",
+  "alpha": 0.05,
+  "question_count": 155,
+  "question_order_identical": true,
+  "model_setting": "auto",
+  "observed_model_ids": {
+    "RTF": {
+      "gpt-6-luna": 155
+    },
+    "ICIO": {
+      "gpt-6-luna": 155
+    },
+    "CRISP": {
+      "gpt-6-luna": 155
+    }
+  },
+  "prompt_hashes": [
+    {
+      "framework": "RTF",
+      "file": "prompt_rtf.txt",
+      "sha256": "07b39f77b81dd0db521a0e05e8976e84e1ce62f2a7804e990d52b6d6f291e9d8"
+    },
+    {
+      "framework": "ICIO",
+      "file": "prompt_icio.txt",
+      "sha256": "62f8f92362d389c668b90e06fee868b7cb558fccebe845c0e23de94599f7b189"
+    },
+    {
+      "framework": "CRISP",
+      "file": "prompt_crisp.txt",
+      "sha256": "b6dafd07ebc163e371b990460ae86fffd67f0013206106be108f0d77ad84187e"
+    }
+  ],
+  "session_metadata": {
+    "RTF": {
+      "session_id": "2b34ae28-211f-492f-90c6-6094aa39140c",
+      "agent_name": "task2-rtf",
+      "actual_model_ids": [
+        "gpt-6-luna"
+      ],
+      "completed_rows": 155
+    },
+    "ICIO": {
+      "session_id": "7bed5495-3028-4110-82f3-527ddf8c4c2c",
+      "agent_name": "task2-icio",
+      "actual_model_ids": [
+        "gpt-6-luna"
+      ],
+      "completed_rows": 155
+    },
+    "CRISP": {
+      "session_id": "4b93a871-18b2-4f04-b52a-e49dda6383fb",
+      "agent_name": "task2-crisp",
+      "actual_model_ids": [
+        "gpt-6-luna"
+      ],
+      "completed_rows": 155
+    }
+  },
+  "data_quality": {
+    "RTF": {
+      "row_count": 155,
+      "generation_status_counts": {
+        "SUCCESS": 155
+      },
+      "model_id_counts": {
+        "gpt-6-luna": 155
+      },
+      "timed_rows": 155,
+      "missing_time_question_indices": [],
+      "invalid_time_question_indices": [],
+      "time_distribution": {
+        "count": 155,
+        "minimum": 1.533,
+        "q1": 2.1615,
+        "median": 2.721,
+        "q3": 3.09,
+        "maximum": 8.123,
+        "iqr": 0.9284999999999997,
+        "lower_tukey_fence": 0.7687500000000007,
+        "upper_tukey_fence": 4.482749999999999,
+        "tukey_outlier_count": 8
+      }
+    },
+    "ICIO": {
+      "row_count": 155,
+      "generation_status_counts": {
+        "SUCCESS": 155
+      },
+      "model_id_counts": {
+        "gpt-6-luna": 155
+      },
+      "timed_rows": 155,
+      "missing_time_question_indices": [],
+      "invalid_time_question_indices": [],
+      "time_distribution": {
+        "count": 155,
+        "minimum": 1.469,
+        "q1": 2.242,
+        "median": 2.769,
+        "q3": 3.4175,
+        "maximum": 9.178,
+        "iqr": 1.1755,
+        "lower_tukey_fence": 0.47875,
+        "upper_tukey_fence": 5.18075,
+        "tukey_outlier_count": 9
+      }
+    },
+    "CRISP": {
+      "row_count": 155,
+      "generation_status_counts": {
+        "SUCCESS": 155
+      },
+      "model_id_counts": {
+        "gpt-6-luna": 155
+      },
+      "timed_rows": 155,
+      "missing_time_question_indices": [],
+      "invalid_time_question_indices": [],
+      "time_distribution": {
+        "count": 155,
+        "minimum": 1.511,
+        "q1": 2.2195,
+        "median": 2.756,
+        "q3": 3.2735000000000003,
+        "maximum": 8.833,
+        "iqr": 1.0540000000000003,
+        "lower_tukey_fence": 0.6384999999999996,
+        "upper_tukey_fence": 4.854500000000001,
+        "tukey_outlier_count": 5
+      }
+    }
+  },
+  "framework_summaries": [
+    {
+      "framework": "RTF",
+      "total_questions": 155,
+      "successful_generations": 155,
+      "correct": 43,
+      "accuracy": 0.27741935483870966,
+      "mean_jaccard": 0.2774204073613433,
+      "median_jaccard": 0.0,
+      "perfect_jaccard_count": 43,
+      "partial_jaccard_count": 1,
+      "zero_jaccard_count": 111,
+      "sql_execution_errors": 0,
+      "failed_predictions": 0,
+      "mean_generation_time_seconds": 2.785464516129032,
+      "median_generation_time_seconds": 2.721,
+      "task2_accuracy_authoritative": 0.2774,
+      "task3_mean_authoritative": 0.2774204073613433
+    },
+    {
+      "framework": "ICIO",
+      "total_questions": 155,
+      "successful_generations": 155,
+      "correct": 43,
+      "accuracy": 0.27741935483870966,
+      "mean_jaccard": 0.2774204073613433,
+      "median_jaccard": 0.0,
+      "perfect_jaccard_count": 43,
+      "partial_jaccard_count": 1,
+      "zero_jaccard_count": 111,
+      "sql_execution_errors": 0,
+      "failed_predictions": 0,
+      "mean_generation_time_seconds": 3.0221290322580647,
+      "median_generation_time_seconds": 2.769,
+      "task2_accuracy_authoritative": 0.2774,
+      "task3_mean_authoritative": 0.2774204073613433
+    },
+    {
+      "framework": "CRISP",
+      "total_questions": 155,
+      "successful_generations": 155,
+      "correct": 43,
+      "accuracy": 0.27741935483870966,
+      "mean_jaccard": 0.2774204073613433,
+      "median_jaccard": 0.0,
+      "perfect_jaccard_count": 43,
+      "partial_jaccard_count": 1,
+      "zero_jaccard_count": 111,
+      "sql_execution_errors": 0,
+      "failed_predictions": 0,
+      "mean_generation_time_seconds": 2.8828967741935485,
+      "median_generation_time_seconds": 2.756,
+      "task2_accuracy_authoritative": 0.2774,
+      "task3_mean_authoritative": 0.2774204073613433
+    }
+  ],
+  "per_question_pairing": {
+    "exact_correctness_vectors_identical": true,
+    "jaccard_vectors_identical": true,
+    "sql_text_exact_matches_by_pair": {
+      "RTF_vs_ICIO": 137,
+      "RTF_vs_CRISP": 137,
+      "ICIO_vs_CRISP": 140
+    },
+    "all_three_sql_texts_identical_count": 131
+  },
+  "statistical_tests": {
+    "accuracy": {
+      "paired_question_count": 155,
+      "per_framework_correct": {
+        "RTF": 43,
+        "ICIO": 43,
+        "CRISP": 43
+      },
+      "identical_correctness_vectors": true,
+      "cochran_q": {
+        "statistic": null,
+        "degrees_of_freedom": 2,
+        "p_value": null,
+        "status": "not_estimable_no_discordant_outcomes",
+        "reason": "All three correctness indicators are identical for every question; Cochran's Q denominator is zero."
+      },
+      "pairwise_mcnemar": [
+        {
+          "first": "RTF",
+          "second": "ICIO",
+          "first_correct_second_incorrect": 0,
+          "first_incorrect_second_correct": 0,
+          "discordant_pairs": 0,
+          "mcnemar_statistic": null,
+          "p_value": null,
+          "status": "not_informative_no_discordant_pairs"
+        },
+        {
+          "first": "RTF",
+          "second": "CRISP",
+          "first_correct_second_incorrect": 0,
+          "first_incorrect_second_correct": 0,
+          "discordant_pairs": 0,
+          "mcnemar_statistic": null,
+          "p_value": null,
+          "status": "not_informative_no_discordant_pairs"
+        },
+        {
+          "first": "ICIO",
+          "second": "CRISP",
+          "first_correct_second_incorrect": 0,
+          "first_incorrect_second_correct": 0,
+          "discordant_pairs": 0,
+          "mcnemar_statistic": null,
+          "p_value": null,
+          "status": "not_informative_no_discordant_pairs"
+        }
+      ],
+      "official_evaluator_results": {
+        "RTF": {
+          "correct": 43,
+          "total": 155,
+          "accuracy": 0.2774,
+          "accuracy_percent": 27.74,
+          "stdout": "Accuracy: 0.2774 (27.74%)\nCorrect: 43/155"
+        },
+        "ICIO": {
+          "correct": 43,
+          "total": 155,
+          "accuracy": 0.2774,
+          "accuracy_percent": 27.74,
+          "stdout": "Accuracy: 0.2774 (27.74%)\nCorrect: 43/155"
+        },
+        "CRISP": {
+          "correct": 43,
+          "total": 155,
+          "accuracy": 0.2774,
+          "accuracy_percent": 27.74,
+          "stdout": "Accuracy: 0.2774 (27.74%)\nCorrect: 43/155"
+        }
+      }
+    },
+    "jaccard": {
+      "paired_question_count": 155,
+      "identical_score_vectors": true,
+      "pairwise_nonzero_difference_counts": {
+        "RTF_minus_ICIO": 0,
+        "RTF_minus_CRISP": 0,
+        "ICIO_minus_CRISP": 0
+      },
+      "friedman": {
+        "statistic": null,
+        "degrees_of_freedom": 2,
+        "p_value": null,
+        "status": "not_informative_all_paired_differences_are_zero"
+      },
+      "pairwise_wilcoxon": [],
+      "note": "All per-question scores are identical across frameworks. Friedman and signed-rank tests cannot provide a meaningful framework contrast when every paired difference is zero."
+    },
+    "generation_time": {
+      "question_level_paired": true,
+      "paired_question_count": 155,
+      "framework_summaries": {
+        "RTF": {
+          "count": 155,
+          "minimum": 1.533,
+          "q1": 2.1615,
+          "median": 2.721,
+          "q3": 3.09,
+          "maximum": 8.123,
+          "iqr": 0.9284999999999997,
+          "lower_tukey_fence": 0.7687500000000007,
+          "upper_tukey_fence": 4.482749999999999,
+          "tukey_outlier_count": 8,
+          "mean": 2.7854645161290326,
+          "sample_standard_deviation": 0.8496783981167377
+        },
+        "ICIO": {
+          "count": 155,
+          "minimum": 1.469,
+          "q1": 2.242,
+          "median": 2.769,
+          "q3": 3.4175,
+          "maximum": 9.178,
+          "iqr": 1.1755,
+          "lower_tukey_fence": 0.47875,
+          "upper_tukey_fence": 5.18075,
+          "tukey_outlier_count": 9,
+          "mean": 3.0221290322580647,
+          "sample_standard_deviation": 1.167750994792968
+        },
+        "CRISP": {
+          "count": 155,
+          "minimum": 1.511,
+          "q1": 2.2195,
+          "median": 2.756,
+          "q3": 3.2735000000000003,
+          "maximum": 8.833,
+          "iqr": 1.0540000000000003,
+          "lower_tukey_fence": 0.6384999999999996,
+          "upper_tukey_fence": 4.854500000000001,
+          "tukey_outlier_count": 5,
+          "mean": 2.8828967741935485,
+          "sample_standard_deviation": 1.0285285175206194
+        }
+      },
+      "friedman": {
+        "statistic": 4.03870967741932,
+        "p_value": 0.13274107686487868,
+        "status": "computed",
+        "kendalls_w": 0.013028095733610709,
+        "degrees_of_freedom": 2,
+        "paired_question_count": 155,
+        "alpha": 0.05,
+        "significant_at_alpha": false
+      },
+      "kendalls_w": 0.013028095733610709,
+      "pairwise_wilcoxon": [
+        {
+          "statistic": 4725.5,
+          "p_value": 0.0184104541413729,
+          "test_method": "two-sided Wilcoxon signed-rank; zero_method='wilcox', continuity correction disabled, method='auto'",
+          "nonzero_pairs": 155,
+          "zero_difference_pairs": 0,
+          "mean_difference_first_minus_second": -0.2366645161290323,
+          "median_difference_first_minus_second": -0.125,
+          "rank_biserial_correlation": -0.21827956989247313,
+          "positive_rank_sum": 4725.5,
+          "negative_rank_sum": 7364.5,
+          "first": "RTF",
+          "second": "ICIO",
+          "paired_question_count": 155,
+          "bootstrap_95_percent_ci_mean_difference": {
+            "lower": -0.4337406451612904,
+            "upper": -0.04701177419354855,
+            "method": "paired question-level percentile bootstrap of the mean difference",
+            "replicates": 10000
+          },
+          "holm_adjusted_p_value": 0.0552313624241187,
+          "significant_after_holm_at_alpha": false,
+          "faster_framework_by_mean": "RTF"
+        },
+        {
+          "statistic": 5405.5,
+          "p_value": 0.253265767084771,
+          "test_method": "two-sided Wilcoxon signed-rank; zero_method='wilcox', continuity correction disabled, method='auto'",
+          "nonzero_pairs": 155,
+          "zero_difference_pairs": 0,
+          "mean_difference_first_minus_second": -0.09743225806451612,
+          "median_difference_first_minus_second": -0.05099999999999971,
+          "rank_biserial_correlation": -0.10578990901571547,
+          "positive_rank_sum": 5405.5,
+          "negative_rank_sum": 6684.5,
+          "first": "RTF",
+          "second": "CRISP",
+          "paired_question_count": 155,
+          "bootstrap_95_percent_ci_mean_difference": {
+            "lower": -0.2823567741935484,
+            "upper": 0.08772951612903225,
+            "method": "paired question-level percentile bootstrap of the mean difference",
+            "replicates": 10000
+          },
+          "holm_adjusted_p_value": 0.4441288085992958,
+          "significant_after_holm_at_alpha": false,
+          "faster_framework_by_mean": "RTF"
+        },
+        {
+          "statistic": 5361.5,
+          "p_value": 0.2220644042996479,
+          "test_method": "two-sided Wilcoxon signed-rank; zero_method='wilcox', continuity correction disabled, method='auto'",
+          "nonzero_pairs": 155,
+          "zero_difference_pairs": 0,
+          "mean_difference_first_minus_second": 0.13923225806451614,
+          "median_difference_first_minus_second": 0.12600000000000033,
+          "rank_biserial_correlation": 0.1130686517783292,
+          "positive_rank_sum": 6728.5,
+          "negative_rank_sum": 5361.5,
+          "first": "ICIO",
+          "second": "CRISP",
+          "paired_question_count": 155,
+          "bootstrap_95_percent_ci_mean_difference": {
+            "lower": -0.08597225806451607,
+            "upper": 0.3671685483870968,
+            "method": "paired question-level percentile bootstrap of the mean difference",
+            "replicates": 10000
+          },
+          "holm_adjusted_p_value": 0.4441288085992958,
+          "significant_after_holm_at_alpha": false,
+          "faster_framework_by_mean": "CRISP"
+        }
+      ],
+      "holm_family_size": 3,
+      "alpha": 0.05,
+      "bootstrap": {
+        "replicates": 10000,
+        "seed": 20261017,
+        "resampling_unit": "question-level paired time differences"
+      }
+    }
+  },
+  "source_hashes": {
+    "teacher_evaluator_sha256": "c3d2cc5f3ce1bfd485cfe7d49a87939df84f0bcb2d250fef69445fe9524acb59",
+    "task2_prediction_csv_sha256": {
+      "RTF": "0e4c73e2e292536fd3a4363ee81b54dffaa8e3886197bc5cd238c0c058792e84",
+      "ICIO": "099412d1508aa2065d7ab0ffbfa0bfd5f3569aefd956c834e4e1607ad6949006",
+      "CRISP": "b8f3d22b56c163d8c74c93c177c75b81cb34e1dc5a21b8c168204e4a3d52f81b"
+    }
+  },
+  "bootstrap_seed": 20261017,
+  "bootstrap_replicates": 10000,
+  "scipy_version": "1.17.1",
+  "numpy_version": "2.4.4",
+  "python_version": "3.14.0"
+}

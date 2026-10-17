@@ -1,0 +1,854 @@
+question,predicted_sql,framework,model_id,generation_time_seconds,generation_status,error,attempt_count,session_id,request_id
+What is the best place in winters for tea food ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'winters'
+  AND FOOD_TYPE = 'tea'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,2.852000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,d52538a6-9ded-49a8-9290-9c7dddc01086
+What is the best place in moraga for european food ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'moraga'
+  AND FOOD_TYPE = 'european'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,2.382000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,d061d7b5-1e05-4a65-93f1-9c2c12c0a80a
+What is the best place in eagan for egyptian food ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'eagan'
+  AND FOOD_TYPE = 'egyptian'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,2.384000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,76ee44ec-62f9-48a9-8c11-5bcee91ae2b4
+What is the best place in atherton for burmese food ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'atherton'
+  AND FOOD_TYPE = 'burmese'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,3.676000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,d7ffce9d-cefd-4fe9-80aa-449afa6aefac
+"What is the best place in tahoe city for potatoes food, and I have not settled whether pasta belongs in a lunchbox or a flowerpot?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'tahoe city'
+  AND FOOD_TYPE = 'potatoes'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,3.400000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,0746a1e7-2fa7-4e31-a5dc-e22d7c8f1094
+What is the best californian in portola valley ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'portola valley'
+  AND FOOD_TYPE = 'californian'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,1.791000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,1ae9cc1f-b536-4c34-bc75-80b3ed6451d0
+"What is the best dim sum in santa rosa, and I still cannot decide whether soup or pie is the better breakfast?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'santa rosa'
+  AND FOOD_TYPE = 'dim sum'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,2.254000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,427008f4-60cc-4c99-a7dd-d231d85ee366
+"On an unrelated menu question, I am torn between curry and apple pie, What is the best peruvian in crockett ?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'crockett'
+  AND FOOD_TYPE = 'peruvian'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,1.776000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,4ced329c-8898-4241-8264-27731358f4a1
+What is the best eclectic in calistoga ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'calistoga'
+  AND FOOD_TYPE = 'eclectic'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,1.543000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,698a0f3a-f2f0-4355-8b2e-f083e476e2a2
+What is the best delivery in rio del mar ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'rio del mar'
+  AND FOOD_TYPE = 'delivery'
+ORDER BY RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,2.598000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,bc3b9f55-0741-460c-84d4-85c33f83b77e
+"While comparing dumplings with pancakes for an imaginary picnic, give me a restaurant on timber creek dr in san jose with a rating above 1.7 (poorly rated or better)?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%timber creek dr%'
+  AND l.CITY_NAME = 'san jose'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.459000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,3344f7ed-3a4d-40da-aab2-ddfc069dad5e
+give me a restaurant on plaza way in lafayette with a rating above 1.8 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'plaza way'
+  AND l.CITY_NAME = 'lafayette'
+  AND r.RATING > 1.8;",CRISP,gpt-6-luna,2.914000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,61538a55-7f0a-42ee-a2b0-eb608e9aeece
+give me a restaurant on avenue near the alameda in belmont with a rating above 2.3 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%avenue%'
+  AND l.CITY_NAME = 'belmont'
+  AND r.RATING > 2.3;",CRISP,gpt-6-luna,7.147000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,2de59d91-8b55-435e-9a84-96fce0da364e
+give me a restaurant on w evelyn ave ste 108 in sunnyvale with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%w evelyn ave%'
+  AND l.CITY_NAME = 'sunnyvale'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.372000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,cba3fa2d-7d89-4d54-89ad-80ec5fd938b5
+give me a restaurant on san ignacio ave in san jose with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'san ignacio ave'
+  AND l.CITY_NAME = 'san jose'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,4.540000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,c8d646a8-2014-4ad8-a39a-ff836bbdd833
+where can i eat drive in food in palo alto ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'palo alto'
+  AND FOOD_TYPE = 'drive in';",CRISP,gpt-6-luna,2.800000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,33a0d6f7-3b99-481f-8a1b-2af15f7d1221
+where can i eat bar food in glen ellen ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'glen ellen'
+  AND FOOD_TYPE = 'bar';",CRISP,gpt-6-luna,4.051000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,fdf49b5e-f776-4806-83c6-57cb9d623553
+where can i eat juice bar food in foster city ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'foster city'
+  AND FOOD_TYPE = 'juice bar';",CRISP,gpt-6-luna,1.511000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,bfb21699-4884-4d10-9dcd-c156f7296cee
+where can i eat spanish food in oakland ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'oakland'
+  AND FOOD_TYPE = 'spanish';",CRISP,gpt-6-luna,1.843000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,6a0c8a57-725e-4be0-92c7-68b7c3a86498
+where can i eat swiss food in moss beach ?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'moss beach'
+  AND FOOD_TYPE = 'swiss';",CRISP,gpt-6-luna,1.571000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,7fef5b81-3af5-4a2f-9e84-d0d86624ff33
+"what is a restaurant in forestville with a rating above 4.5 (excellent or better), though I am also choosing between noodles and a sandwich for a rainy picnic?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'forestville'
+  AND RATING > 4.5;",CRISP,gpt-6-luna,2.849000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,0f9d41b4-59c9-4e71-a173-79fa0442da84
+what is a restaurant in vallejo with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'vallejo'
+  AND RATING > 2;",CRISP,gpt-6-luna,1.715000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,2041c578-4b43-4f25-baaa-13454bff289a
+what is a restaurant in alameda with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'alameda'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.984000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,9035fda2-c630-474d-87a0-4c7668e7f97c
+what is a restaurant in san juan bautista with a rating above 4.5 (excellent or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'san juan bautista'
+  AND RATING > 4.5;",CRISP,gpt-6-luna,1.694000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,440d12b2-aa32-4d78-b27a-5ab940f1255c
+"what is a restaurant in larkspur with a rating above 4.5 (excellent or better), and I am still weighing curry against apple pie for a trip to the moon?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'larkspur'
+  AND RATING > 4.5;",CRISP,gpt-6-luna,1.735000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,211c19ef-8555-4774-a414-519c2828c0b1
+"A very long menu debate has occupied my afternoon: should a picnic feature warm noodles, cold muffins, or an elaborate tower of crackers, and would any of them pair well with a map of imaginary islands? what are some restaurants in oakland with a rating above 2 (below average or better)? This also reminds me of an unrelated menu puzzle involving pumpkin biscuits, chilled soup, and an imaginary picnic where every plate must be shared with a different stuffed animal.","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'oakland'
+  AND RATING > 2;",CRISP,gpt-6-luna,3.818000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,c6f5b96d-093a-4d6a-939d-6da0bcd35ca7
+"what are some restaurants in vacaville with a rating above 2 (below average or better), while I wonder if dumplings or pancakes could help me find my misplaced umbrella?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'vacaville'
+  AND RATING > 2;",CRISP,gpt-6-luna,3.419000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,8a24bd9e-6e6d-4fef-b111-dca7b2d825a6
+what are some restaurants in alameda with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'alameda'
+  AND RATING > 2;",CRISP,gpt-6-luna,1.819000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,ffd2e919-41c1-4b73-a398-fa147eda8746
+what are some restaurants in east palo alto with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'east palo alto'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.707000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,7bdc25fd-5158-4354-a2e8-9dfabcd46260
+what are some restaurants in santa cruz with a rating above 2.5 (average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'santa cruz'
+  AND RATING > 2.5;",CRISP,gpt-6-luna,3.122000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,794d47f6-4cf6-4cac-9774-7c185488b438
+what is a restaurant in brentwood with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'brentwood'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.324000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,e897a7f5-8ebb-400b-9e06-f65f0ecd04e7
+what is a restaurant in mill valley with a rating above 4.5 (excellent or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'mill valley'
+  AND RATING > 4.5;",CRISP,gpt-6-luna,1.714000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,8ef22652-6137-436a-90da-bbc192012960
+what is a restaurant in rio vista with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'rio vista'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.178000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,92226eb7-6d7d-4341-b354-c98759a34b49
+what is a restaurant in rio del mar with a rating above 1.7 (poorly rated or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'rio del mar'
+  AND RATING > 1.7;",CRISP,gpt-6-luna,1.657000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,8636832f-0c4f-441c-8f96-e9a6dab0dbec
+what is a restaurant in lafayette with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'lafayette'
+  AND RATING > 2;",CRISP,gpt-6-luna,1.582000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,a19147c6-57c3-4266-b210-ae3e9114d42b
+where can i eat some mexican food on noriega in san francisco with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%noriega%'
+  AND l.CITY_NAME = 'san francisco'
+  AND r.FOOD_TYPE = 'mexican'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,1.789000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,78e7f8a6-9f70-47b8-9ee2-28ac4088baca
+where can i eat some vietnamese food on shellmound st # 12 in emeryville with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.HOUSE_NUMBER = 12
+  AND l.STREET_NAME LIKE '%shellmound st%'
+  AND l.CITY_NAME = 'emeryville'
+  AND r.FOOD_TYPE = 'vietnamese'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,4.655000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,d2b91af2-b00e-46e5-b651-80022789ce90
+where can i eat some mexican food on persian dr in sunnyvale with a rating above 4.5 (excellent or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'persian dr'
+  AND l.CITY_NAME = 'sunnyvale'
+  AND r.FOOD_TYPE = 'mexican'
+  AND r.RATING > 4.5;",CRISP,gpt-6-luna,2.752000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,5b4dd0c7-90eb-4e4b-80e3-477ffb5e5fe8
+where can i eat some cafe food on el camino real in san bruno with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'el camino real'
+  AND l.CITY_NAME = 'san bruno'
+  AND r.FOOD_TYPE = 'cafe'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,4.253000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,e464e136-d99a-406a-a0a3-d3358328702a
+where can i eat some pizza food on hawkins st in hollister with a rating above 4.5 (excellent or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'hawkins st'
+  AND l.CITY_NAME = 'hollister'
+  AND r.FOOD_TYPE = 'pizza'
+  AND r.RATING > 4.5;",CRISP,gpt-6-luna,2.163000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,c54b3d7b-d007-43ba-8095-1c0525785a81
+where is a restaurant on hillsdale mall in san mateo for ice cream food with a rating above 1.8 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%hillsdale mall%'
+  AND l.CITY_NAME = 'san mateo'
+  AND r.FOOD_TYPE = 'ice cream'
+  AND r.RATING > 1.8;",CRISP,gpt-6-luna,2.795000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,1cde245d-1ea8-4028-a0d0-0f08859bc1bb
+where is a restaurant on st in sonoma for winery food with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%st%'
+  AND l.CITY_NAME = 'sonoma'
+  AND r.FOOD_TYPE = 'winery'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.902000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,94669176-7324-4907-bf9d-e2f64156a95a
+where is a restaurant on hartz av in danville for cafe food with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'hartz av'
+  AND l.CITY_NAME = 'danville'
+  AND r.FOOD_TYPE = 'cafe'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.881000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,9dc2a161-af6b-4c7b-aa0c-b88a123ad4b9
+where is a restaurant on othello dr in fremont for cafe food with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'othello dr'
+  AND l.CITY_NAME = 'fremont'
+  AND r.FOOD_TYPE = 'cafe'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.228000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,94587c76-75ce-4dbe-bfbb-1d37392c5d19
+where is a restaurant on n.shoreline blvd. in mountain view for sandwiches food with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%shoreline blvd%'
+  AND l.CITY_NAME = 'mountain view'
+  AND r.FOOD_TYPE = 'sandwiches'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.586000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,68dd2ace-dff9-4293-bff4-1da9aaefece8
+where is a bakery restaurant on simms st in san rafael with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'simms st'
+  AND l.CITY_NAME = 'san rafael'
+  AND r.FOOD_TYPE = 'bakery'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.940000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,4e5da609-21af-4eb1-95ba-ba70283aca85
+where is a donuts restaurant on mission st in daly city with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'mission st'
+  AND l.CITY_NAME = 'daly city'
+  AND r.FOOD_TYPE = 'donuts'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.883000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,450dd224-853d-4439-baa7-d2d8656ac4e1
+where is a cafe restaurant on n san pedro st in san jose with a rating above 1.8 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'n san pedro st'
+  AND l.CITY_NAME = 'san jose'
+  AND r.FOOD_TYPE = 'cafe'
+  AND r.RATING > 1.8;",CRISP,gpt-6-luna,2.400000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,6a622b9c-80be-4cd6-b07a-7d816277775d
+where is a japanese restaurant on broadway in burlingame with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'broadway'
+  AND l.CITY_NAME = 'burlingame'
+  AND r.FOOD_TYPE = 'japanese'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.722000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,1397dc76-f6cf-4af3-a7e3-f068977fb43d
+"where is a asian restaurant on castro st in mountain view with a rating above 2.8 (average or better), and I am still weighing curry against apple pie for a trip to the moon?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'castro st'
+  AND l.CITY_NAME = 'mountain view'
+  AND r.FOOD_TYPE = 'asian'
+  AND r.RATING > 2.8;",CRISP,gpt-6-luna,2.721000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,8854b4a3-f4d1-43dd-a4f0-18e97d339b24
+give me a restaurant on mission blvd in hayward for pizza food with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'mission blvd'
+  AND l.CITY_NAME = 'hayward'
+  AND r.FOOD_TYPE = 'pizza'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.762000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,73d7637a-ce73-4fb0-8478-72c0b28d9c3f
+"give me a restaurant on san pablo ave # a in pinole for deli food with a rating above 2 (below average or better), though I am also choosing between noodles and a sandwich for a rainy picnic?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%san pablo ave%'
+  AND l.CITY_NAME = 'pinole'
+  AND r.FOOD_TYPE = 'deli'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.333000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,f5bc488a-93b8-48f0-87df-dcd035a42b0d
+give me a restaurant on contra costa blvd ste a in pleasant hill for pizza food with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'contra costa blvd'
+  AND l.CITY_NAME = 'pleasant hill'
+  AND r.FOOD_TYPE = 'pizza'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.756000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,b9f89f8d-b908-4c2c-91cf-5ccdd261308e
+"Thinking about snacks, I wonder whether a muffin or a burrito is easier to fold, give me a restaurant on ocean ave in san francisco for cafe food with a rating above 1.5 (poorly rated or better)?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'ocean ave'
+  AND l.CITY_NAME = 'san francisco'
+  AND r.FOOD_TYPE = 'cafe'
+  AND r.RATING > 1.5;",CRISP,gpt-6-luna,2.049000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,64f35f9a-12b9-46c6-958e-a55d8ab0a873
+"My unrelated culinary dilemma involves choosing between cinnamon toast, vegetable pie, and a bowl of rice for a pretend celebration, while a very serious committee of stuffed animals reviews the menu. give me a restaurant on 6th st in hayward for bar food with a rating above 1.7 (poorly rated or better)? On a completely separate note, I cannot settle whether blueberry dumplings or cinnamon toast would be a better offering at a fictional festival held on the far side of a very large armchair.","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = '6th st'
+  AND l.CITY_NAME = 'hayward'
+  AND r.FOOD_TYPE = 'bar'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.854000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,a42254c9-b08f-45bf-b2e7-7dcd94c55bae
+give me a donuts restaurant on mission blvd in fremont with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'mission blvd'
+  AND l.CITY_NAME = 'fremont'
+  AND r.FOOD_TYPE = 'donuts'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.140000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,cf0a0413-be07-4312-bfd0-ec3793bf3a35
+"My unrelated culinary dilemma involves choosing between cinnamon toast, vegetable pie, and a bowl of rice for a pretend celebration, while a very serious committee of stuffed animals reviews the menu. I keep changing my mind about whether soup or toast is better company for a compass, give me a italian restaurant on clement in san francisco with a rating above 2 (below average or better)? This also reminds me of an unrelated menu puzzle involving pumpkin biscuits, chilled soup, and an imaginary picnic where every plate must be shared with a different stuffed animal.","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%clement%'
+  AND l.CITY_NAME = 'san francisco'
+  AND r.FOOD_TYPE = 'italian'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.663000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,89d438e6-41f1-45e5-baa3-b63e32304b1c
+give me a cafe restaurant on clement in san francisco with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%clement%'
+  AND l.CITY_NAME = 'san francisco'
+  AND r.FOOD_TYPE = 'cafe'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.557000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,03989205-cf50-4dfe-97fb-126125bdf853
+"A very long menu debate has occupied my afternoon: should a picnic feature warm noodles, cold muffins, or an elaborate tower of crackers, and would any of them pair well with a map of imaginary islands? give me a mexican restaurant on clayton rd apt 7 in concord with a rating above 1.7 (poorly rated or better)? Separately, I am still deciding whether a basket of roasted chickpeas, a stack of pear pancakes, or a bowl of noodles would make the most sensible snack for a journey that exists only on a kitchen calendar.","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%clayton rd%'
+  AND l.CITY_NAME = 'concord'
+  AND r.FOOD_TYPE = 'mexican'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,5.557000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,8e86fc82-2f99-44a2-9727-f2424ba805a3
+give me a continental restaurant on south market st in san jose with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'south market st'
+  AND l.CITY_NAME = 'san jose'
+  AND r.FOOD_TYPE = 'continental'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,1.873000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,fee3b79f-0a96-4fc0-aa24-08b1e44d5329
+"where are some restaurants for mexican food on ave. in mill valley with a rating above 2 (below average or better), while I wonder if dumplings or pancakes could help me find my misplaced umbrella?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%ave.%'
+  AND l.CITY_NAME = 'mill valley'
+  AND r.FOOD_TYPE = 'mexican'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.815000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,cc7b024e-6438-4752-8797-3afa35c9af7e
+"I cannot decide whether pasta belongs in a lunchbox or a flowerpot, where are some restaurants for chinese food on grand ave in south san francisco with a rating above 1.7 (poorly rated or better)?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'grand ave'
+  AND l.CITY_NAME = 'south san francisco'
+  AND r.FOOD_TYPE = 'chinese'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.813000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,67e8cebc-de15-4633-956a-0d030d8b0cb0
+"I am still deciding whether a taco or a bowl of cereal suits a rainy day, where are some restaurants for mexican food on mill st in ben lomond with a rating above 2 (below average or better)?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'mill st'
+  AND l.CITY_NAME = 'ben lomond'
+  AND r.FOOD_TYPE = 'mexican'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,4.307000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,23df3c5e-e53d-4f09-926c-49d3c37b3736
+"I am still deciding whether a taco or a bowl of cereal suits a rainy day, where are some restaurants for dessert food on candelero dr in walnut creek with a rating above 1.5 (poorly rated or better)?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'candelero dr'
+  AND l.CITY_NAME = 'walnut creek'
+  AND r.FOOD_TYPE = 'dessert'
+  AND r.RATING > 1.5;",CRISP,gpt-6-luna,3.873000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,00cc0c23-994b-4990-bd7e-21738cbc8360
+where are some restaurants for american food on exp/riveroaks in san jose with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%riveroaks%'
+  AND l.CITY_NAME = 'san jose'
+  AND r.FOOD_TYPE = 'american'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.987000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,01f5ccbe-9461-4d76-a0ed-566261700631
+What is the lifes greates illusion?,SELECT NULL WHERE 1 = 0;,CRISP,gpt-6-luna,1.839000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,73bbb638-f082-4b69-bf95-f90d306fa099
+give me some restaurants in the monterey with a rating above 4.5 (excellent or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'monterey'
+  AND r.RATING > 4.5;",CRISP,gpt-6-luna,3.119000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,3c1a70e6-57f8-4933-a451-de47e978a858
+give me some restaurants in the sacramento area with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'sacramento'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.914000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,72ce11c4-17d5-4b45-8488-e6d044d9e230
+give me some restaurants in the lake tahoe with a rating above 2.3 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'lake tahoe'
+  AND r.RATING > 2.3;",CRISP,gpt-6-luna,2.816000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,66c8c8cb-960e-4446-86fd-9c16238c79f7
+"give me some restaurants in the napa valley with a rating above 2 (below average or better), and whether a taco or a bowl of cereal would make a better hat?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'napa valley'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.654000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,e7cd37c8-be9e-446b-9bf9-ca38483c0e99
+where can we find a restaurant on buchanan in seaside ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%buchanan%'
+  AND l.CITY_NAME = 'seaside';",CRISP,gpt-6-luna,3.180000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,78ff7fb7-be10-40bd-8b1b-6a4645d8ad2d
+"I cannot decide whether pasta belongs in a lunchbox or a flowerpot, where can we find a restaurant on alvarado blvd in banta ?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'alvarado blvd'
+  AND l.CITY_NAME = 'banta';",CRISP,gpt-6-luna,2.951000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,4e13f5d5-672f-42e9-9fbe-2d0b77cfe498
+"where can we find a restaurant on town and country vlg in campbell, while the menu leaves me wondering whether toast or soup can teach a compass to sing?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%town and country vlg%'
+  AND l.CITY_NAME = 'campbell';",CRISP,gpt-6-luna,2.840000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,88456952-69b3-47d7-a139-76ebed44bf6c
+"While comparing dumplings with pancakes for an imaginary picnic, where can we find a restaurant on laurie meadows dr in orinda ?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'laurie meadows dr'
+  AND l.CITY_NAME = 'orinda';",CRISP,gpt-6-luna,2.124000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,1648fc71-e18e-4755-92d3-efbf3b130212
+where can we find a restaurant on allston way in pacheco ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'allston way'
+  AND l.CITY_NAME = 'pacheco';",CRISP,gpt-6-luna,2.025000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,88e10cc5-0d34-4fba-a72c-4aad1042cee3
+"On an unrelated menu question, I am torn between curry and apple pie, where can we find some restaurants on e capitol expy # 104 in sonora ?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.HOUSE_NUMBER = 104
+  AND l.STREET_NAME LIKE '%e capitol expy%'
+  AND l.CITY_NAME = 'sonora';",CRISP,gpt-6-luna,2.686000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,c2d981d3-6533-4c7c-b9c9-b9a8d8eed4aa
+where can we find some restaurants on e. morehead in campbell ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME LIKE '%morehead%'
+  AND l.CITY_NAME = 'campbell';",CRISP,gpt-6-luna,2.859000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,3693c495-ed30-4665-8608-9b915215fc55
+where can we find some restaurants on w 25th ave in los altos ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'w 25th ave'
+  AND l.CITY_NAME = 'los altos';",CRISP,gpt-6-luna,4.376000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,a89eea75-c962-40e4-b896-d553f7507028
+where can we find some restaurants on alvarado blvd in menlo park ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'alvarado blvd'
+  AND l.CITY_NAME = 'menlo park';",CRISP,gpt-6-luna,2.176000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,b1acbd64-0d2d-4d99-ace5-69e6ef244edc
+"A very long menu debate has occupied my afternoon: should a picnic feature warm noodles, cold muffins, or an elaborate tower of crackers, and would any of them pair well with a map of imaginary islands? where can we find some restaurants on scotts valley dr in concord ? Meanwhile, a hypothetical lunchbox committee is debating lentil pie, roasted pears, and tiny omelets, with no agreement about which one would travel best across an imaginary ocean.","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE l.STREET_NAME = 'scotts valley dr'
+  AND l.CITY_NAME = 'concord';",CRISP,gpt-6-luna,2.961000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,7eb7f32b-3f53-4b14-bf70-8760abdd2fbe
+what is the best basque in the bay area ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'basque'
+ORDER BY r.RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,3.639000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,65b0704b-14bf-4744-a298-9573623c82a7
+"I cannot decide whether pasta belongs in a lunchbox or a flowerpot, what is the best lamb in the northern california ?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'northern california'
+  AND r.FOOD_TYPE = 'lamb'
+ORDER BY r.RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,3.071000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,4608fa3f-d731-4b0d-8a92-5983eb61ea8e
+what is the best hoffbrau in the sacramento area ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'sacramento'
+  AND r.FOOD_TYPE = 'hoffbrau'
+ORDER BY r.RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,8.833000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,87a5cbe3-c7de-49f7-8024-3fd8bd0fbd71
+"I cannot decide whether pasta belongs in a lunchbox or a flowerpot, what is the best yogurt in the yosemite and mono lake area ?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'yosemite and mono lake'
+  AND r.FOOD_TYPE = 'yogurt'
+ORDER BY r.RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,4.657000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,605e9d16-cab4-4207-a628-b92d000dde93
+what is the best brunch in the napa valley ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'napa valley'
+  AND r.FOOD_TYPE = 'brunch'
+ORDER BY r.RATING DESC
+LIMIT 1;",CRISP,gpt-6-luna,3.514000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,c2712a0d-b194-4551-9060-d900ea5897df
+give me some restaurants in the los angeles area ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'los angeles';",CRISP,gpt-6-luna,2.855000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,f12debf3-d3f7-4aa6-8774-9ecbe674a847
+give me some restaurants in the bay area ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area';",CRISP,gpt-6-luna,1.905000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,7aac59d0-c2c0-4588-b20f-86052f9946cd
+give me some restaurants in the unknown ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'unknown';",CRISP,gpt-6-luna,2.788000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,6c49825b-cdde-4587-81e8-616c1edc3afd
+give me some restaurants in the northern california ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'northern california';",CRISP,gpt-6-luna,2.221000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,b06aa52b-9529-4c83-bbb5-cf950dcd8378
+"give me some restaurants in the sacramento area, and I have not settled whether pasta belongs in a lunchbox or a flowerpot?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'sacramento';",CRISP,gpt-6-luna,3.456000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,92f2bb05-dea3-4761-82fd-0335f2570d75
+where can i find a restaurant in the napa valley ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'napa valley';",CRISP,gpt-6-luna,2.588000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,42938804-69c0-4f97-b4ef-d12bd8d8fc46
+where can i find a restaurant in the sacramento area ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'sacramento';",CRISP,gpt-6-luna,4.107000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,30da3719-99c6-418a-ae3d-b35db85a2b44
+where can i find a restaurant in the monterey ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'monterey';",CRISP,gpt-6-luna,2.675000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,f6ef5543-9927-4338-9e00-953eff514b85
+where can i find a restaurant in the lake tahoe ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'lake tahoe';",CRISP,gpt-6-luna,3.598000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,175f3e2a-2a09-43bc-a790-c5fd834d3028
+where can i find a restaurant in the yosemite and mono lake area ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'yosemite and mono lake';",CRISP,gpt-6-luna,2.210000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,22c07572-b599-489b-8876-ca1e01eed730
+what are some places in the bay area for ethiopian food with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'ethiopian'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.115000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,029b0176-fde8-4b19-ae57-c1f123f29791
+"Thinking about snacks, I wonder whether a muffin or a burrito is easier to fold, what are some places in the los angeles area for indian food with a rating above 3 (good or better)?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'los angeles'
+  AND r.FOOD_TYPE = 'indian'
+  AND r.RATING > 3;",CRISP,gpt-6-luna,2.113000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,df48539a-d55e-4961-badf-c7d0d07375a3
+what are some places in the bay area for moroccan food with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'moroccan'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.517000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,2499a7ea-1d3d-485e-acf5-9439dafba56f
+what are some places in the northern california for italian food with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'northern california'
+  AND r.FOOD_TYPE = 'italian'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.618000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,2fa34db8-0c59-4bb7-bbaf-ad720489a450
+what are some places in the monterey for bar food with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'monterey'
+  AND r.FOOD_TYPE = 'bar'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.652000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,04ee602f-4fb4-4e72-a43c-d606c240d218
+give me a restaurant in the monterey for swiss food with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'monterey'
+  AND r.FOOD_TYPE = 'swiss'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.220000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,1b1ece26-7251-4904-91ab-3715cb7e5e98
+give me a restaurant in the bay area for american food with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'american'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.096000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,593f0d5f-4915-4c98-b8b7-f5479624c2fa
+"give me a restaurant in the bay area for greek food with a rating above 4.5 (excellent or better), while the menu leaves me wondering whether toast or soup can teach a compass to sing?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'greek'
+  AND r.RATING > 4.5;",CRISP,gpt-6-luna,2.663000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,0f0fa87e-8d81-418d-b6a8-2ee53525cf05
+give me a restaurant in the bay area for dinner food with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'dinner'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.306000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,f812dd23-41ca-4664-a4aa-f2e617284f3d
+give me a restaurant in the napa valley for ice cream food with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'napa valley'
+  AND r.FOOD_TYPE = 'ice cream'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,3.266000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,bb32a9b7-c943-4e75-887e-59ee86fdbd76
+give me a latin restaurant in the bay area with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'latin'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.130000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,622a9583-d42f-449d-970b-d45eecc4a87d
+give me a dinner restaurant in the bay area with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'dinner'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.537000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,a9ea529a-8d5d-4fae-aeea-01d951fb4875
+"While I debate whether soup or pie makes a better breakfast, give me a bar restaurant in the napa valley with a rating above 2 (below average or better)?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'napa valley'
+  AND r.FOOD_TYPE = 'bar'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.078000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,cf2851f3-1177-4469-a59e-f699cf2cae6e
+give me a bulgarian restaurant in the bay area with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'bulgarian'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.624000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,8add91d6-54db-4ca5-a463-f916c5e98631
+give me a german restaurant in the bay area with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'german'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,1.937000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,036a386d-ead1-4135-a940-14c0e02089b7
+where are some restaurants for nouveau food in the bay area with a rating above 3.5 (very good or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'nouveau'
+  AND r.RATING > 3.5;",CRISP,gpt-6-luna,3.008000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,364eb46e-68d5-4584-950a-27b0034f8c7d
+"I keep changing my mind about whether soup or toast is better company for a compass, where are some restaurants for californian food in the napa valley with a rating above 2.3 (below average or better)?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'napa valley'
+  AND r.FOOD_TYPE = 'californian'
+  AND r.RATING > 2.3;",CRISP,gpt-6-luna,2.219000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,d3566c13-8ba6-4fca-9392-bc555b108c2a
+where are some restaurants for dessert food in the bay area with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'dessert'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,1.874000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,c3d91340-47b4-4fd3-8fea-84fe4babc845
+where are some restaurants for hunan food in the bay area with a rating above 3 (good or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'hunan'
+  AND r.RATING > 3;",CRISP,gpt-6-luna,2.472000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,74bd3202-3692-4a02-9ad8-954892f5a854
+where are some restaurants for vietnamese/louisiana food in the bay area with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'vietnamese/louisiana'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.114000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,bffbc1b8-f7e4-4038-8ec8-8942055142c9
+where can i eat some breakfast food in the bay area with a rating above 2 (below average or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'breakfast'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.820000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,081d57e4-56df-4408-a847-a5d160c03eb9
+"Thinking about snacks, I wonder whether a muffin or a burrito is easier to fold, where can i eat some swiss food in the monterey with a rating above 2 (below average or better)?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'monterey'
+  AND r.FOOD_TYPE = 'swiss'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.407000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,7cc22722-cbfc-4d04-a593-b189b875bb18
+"where can i eat some venison food in the bay area with a rating above 2 (below average or better), and I still cannot decide whether soup or pie is the better breakfast?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'venison'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,3.435000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,696c0d11-d9b2-47d7-b163-496197d573fe
+"where can i eat some pizza food in the bay area with a rating above 2 (below average or better), and I still cannot decide whether soup or pie is the better breakfast?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'bay area'
+  AND r.FOOD_TYPE = 'pizza'
+  AND r.RATING > 2;",CRISP,gpt-6-luna,2.081000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,7f4713be-8974-46e3-afca-7d17ebe8c909
+where can i eat some ice cream food in the monterey with a rating above 1.7 (poorly rated or better)?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN GEOGRAPHIC AS g ON r.CITY_NAME = g.CITY_NAME
+WHERE g.REGION = 'monterey'
+  AND r.FOOD_TYPE = 'ice cream'
+  AND r.RATING > 1.7;",CRISP,gpt-6-luna,2.240000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,0d05581d-0954-4211-af3d-f6ca2b1c6681
+give me some yogurt restaurants in santa rosa with a rating above 1.7 (poorly rated or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'santa rosa'
+  AND FOOD_TYPE = 'yogurt'
+  AND RATING > 1.7;",CRISP,gpt-6-luna,4.906000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,b9a2338d-9ad0-4f93-aebb-25d031e5e28b
+"I have been comparing the merits of lentil soup, roasted pears, and tiny pancakes for a fictional train journey, and still cannot decide which snack would best accompany a collection of mismatched teacups. I am still deciding whether a taco or a bowl of cereal suits a rainy day, give me some california restaurants in mill valley with a rating above 2 (below average or better)? Meanwhile, a hypothetical lunchbox committee is debating lentil pie, roasted pears, and tiny omelets, with no agreement about which one would travel best across an imaginary ocean.","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'mill valley'
+  AND FOOD_TYPE = 'california'
+  AND RATING > 2;",CRISP,gpt-6-luna,3.616000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,dbdd30c8-babe-4518-81fa-bf04b8ea413a
+"I have been comparing the merits of lentil soup, roasted pears, and tiny pancakes for a fictional train journey, and still cannot decide which snack would best accompany a collection of mismatched teacups. Thinking about snacks, I wonder whether a muffin or a burrito is easier to fold, give me some cafe restaurants in richmond with a rating above 2 (below average or better)? Separately, I am still deciding whether a basket of roasted chickpeas, a stack of pear pancakes, or a bowl of noodles would make the most sensible snack for a journey that exists only on a kitchen calendar.","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'richmond'
+  AND FOOD_TYPE = 'cafe'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.454000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,d873c59f-7ba7-4e0f-82dd-f38d51be4553
+give me some sandwiches restaurants in walnut creek with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'walnut creek'
+  AND FOOD_TYPE = 'sandwiches'
+  AND RATING > 2;",CRISP,gpt-6-luna,7.478000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,604380d0-a09e-4392-b4a1-2d7ab8fea989
+give me some cafe restaurants in yountville with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'yountville'
+  AND FOOD_TYPE = 'cafe'
+  AND RATING > 2;",CRISP,gpt-6-luna,1.937000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,d996d715-4f31-45d5-9f05-51c88a49d37c
+give me some places for catering in vallejo with a rating above 1.7 (poorly rated or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'vallejo'
+  AND FOOD_TYPE = 'catering'
+  AND RATING > 1.7;",CRISP,gpt-6-luna,3.295000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,ea662d96-65cc-4f01-9e02-02956662a104
+"On a separate food note, I cannot choose between noodles and a sandwich, give me some places for chinese in pacheco with a rating above 4.5 (excellent or better)?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'pacheco'
+  AND FOOD_TYPE = 'chinese'
+  AND RATING > 4.5;",CRISP,gpt-6-luna,3.561000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,d71b3401-ca74-4cb5-85ad-fd8045427b01
+give me some places for chinese in petaluma with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'petaluma'
+  AND FOOD_TYPE = 'chinese'
+  AND RATING > 2;",CRISP,gpt-6-luna,1.861000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,641f5783-92b5-40bb-9519-64990061bb0f
+give me some places for burgers in los altos with a rating above 1.4 (poorly rated or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'los altos'
+  AND FOOD_TYPE = 'burgers'
+  AND RATING > 1.4;",CRISP,gpt-6-luna,2.831000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,838df787-85f6-4b33-bf35-7897b5737426
+give me some places for american in san francisco with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'san francisco'
+  AND FOOD_TYPE = 'american'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.042000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,e8ad355b-ee93-4f39-a698-70fc7f4db70d
+where is a thai in unknown with a rating above 2.7 (average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'unknown'
+  AND FOOD_TYPE = 'thai'
+  AND RATING > 2.7;",CRISP,gpt-6-luna,3.194000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,1f36b7b0-8db1-4fb3-a225-6c5254f9fdf6
+"My unrelated culinary dilemma involves choosing between cinnamon toast, vegetable pie, and a bowl of rice for a pretend celebration, while a very serious committee of stuffed animals reviews the menu. On a separate food note, I cannot choose between noodles and a sandwich, where is a chinese in saratoga with a rating above 1.7 (poorly rated or better)? This also reminds me of an unrelated menu puzzle involving pumpkin biscuits, chilled soup, and an imaginary picnic where every plate must be shared with a different stuffed animal.","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'saratoga'
+  AND FOOD_TYPE = 'chinese'
+  AND RATING > 1.7;",CRISP,gpt-6-luna,2.805000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,996d649f-9580-4169-b1a3-f49318ad2115
+where is a haitian in emeryville with a rating above 4.5 (excellent or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'emeryville'
+  AND FOOD_TYPE = 'haitian'
+  AND RATING > 4.5;",CRISP,gpt-6-luna,4.574000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,395d6fd3-5067-418f-906d-647e51e01548
+where is a mexican in ben lomond with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'ben lomond'
+  AND FOOD_TYPE = 'mexican'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.177000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,397b4773-4022-4994-9a30-3d156e88789e
+"where is a french in emeryville with a rating above 2 (below average or better), and I have not settled whether pasta belongs in a lunchbox or a flowerpot?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'emeryville'
+  AND FOOD_TYPE = 'french'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.526000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,b8c4dd66-45b1-4061-bb36-8c1583caae7c
+"where is a restaurant in san carlos for bread food with a rating above 1.8 (poorly rated or better), and I am still weighing curry against apple pie for a trip to the moon?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'san carlos'
+  AND FOOD_TYPE = 'bread'
+  AND RATING > 1.8;",CRISP,gpt-6-luna,3.335000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,077706f5-ee0d-4c6b-ad04-ffb3eb7ec7ad
+where is a restaurant in antioch for thai food with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'antioch'
+  AND FOOD_TYPE = 'thai'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.179000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,926d9f64-a3a4-40e4-a225-5d3393ed989e
+where is a restaurant in moraga for ice cream food with a rating above 1.7 (poorly rated or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'moraga'
+  AND FOOD_TYPE = 'ice cream'
+  AND RATING > 1.7;",CRISP,gpt-6-luna,2.090000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,efb8eb2e-439f-4578-b615-ee0b8da34cbd
+where is a restaurant in fairfield for donuts food with a rating above 4.5 (excellent or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'fairfield'
+  AND FOOD_TYPE = 'donuts'
+  AND RATING > 4.5;",CRISP,gpt-6-luna,3.281000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,1e33ccd7-4d09-4167-afb0-76ea1434b998
+where is a restaurant in milpitas for vietnamese food with a rating above 3.3 (good or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'milpitas'
+  AND FOOD_TYPE = 'vietnamese'
+  AND RATING > 3.3;",CRISP,gpt-6-luna,3.431000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,afee865c-8a15-4166-9914-27b87f04dc00
+what are some restaurants in san lorenzo for french food with a rating above 1.7 (poorly rated or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'san lorenzo'
+  AND FOOD_TYPE = 'french'
+  AND RATING > 1.7;",CRISP,gpt-6-luna,3.357000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,acaab202-cbd3-473c-b9e8-8f3e53bfb989
+what are some restaurants in berkeley for mexican food with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'berkeley'
+  AND FOOD_TYPE = 'mexican'
+  AND RATING > 2;",CRISP,gpt-6-luna,1.939000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,878a438a-eddb-44de-b3fa-8edc77ff879b
+what are some restaurants in sunnyvale for afghani food with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'sunnyvale'
+  AND FOOD_TYPE = 'afghani'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.494000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,0179c9f1-df49-4a01-8be4-4fbec39c97e8
+"While planning a completely hypothetical feast, I keep weighing pumpkin soup against blueberry dumplings and wondering whether a pocket-sized omelet would be practical for a voyage across a carpeted ocean. what are some restaurants in alameda for burgers food with a rating above 2 (below average or better)? Meanwhile, a hypothetical lunchbox committee is debating lentil pie, roasted pears, and tiny omelets, with no agreement about which one would travel best across an imaginary ocean.","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'alameda'
+  AND FOOD_TYPE = 'burgers'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.287000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,293af0c1-05c9-420f-8bbc-2b3d05b20810
+what are some restaurants in aptos for barbeque food with a rating above 1.8 (poorly rated or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'aptos'
+  AND FOOD_TYPE = 'barbeque'
+  AND RATING > 1.8;",CRISP,gpt-6-luna,3.410000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,8e79cdf9-bd51-41eb-882c-2b0add00c694
+give me some steak restaurants in morgan hill with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'morgan hill'
+  AND FOOD_TYPE = 'steak'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.227000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,add312a4-54e5-4219-9702-6dbe1462ddb5
+give me some coffee restaurants in castro valley with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'castro valley'
+  AND FOOD_TYPE = 'coffee'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.440000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,737298d2-9b61-4d43-b014-0a441cc85751
+"give me some spanish restaurants in san jose with a rating above 2 (below average or better), while the menu leaves me wondering whether toast or soup can teach a compass to sing?","SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'san jose'
+  AND FOOD_TYPE = 'spanish'
+  AND RATING > 2;",CRISP,gpt-6-luna,2.017000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,e0d156f8-fe14-497f-8fb2-04d4d9651141
+give me some american restaurants in hollister with a rating above 2 (below average or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'hollister'
+  AND FOOD_TYPE = 'american'
+  AND RATING > 2;",CRISP,gpt-6-luna,3.087000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,f23720b5-14bf-4975-9852-4a7fb95360df
+give me some seafood restaurants in napa with a rating above 1.7 (poorly rated or better)?,"SELECT ID, NAME
+FROM RESTAURANT
+WHERE CITY_NAME = 'napa'
+  AND FOOD_TYPE = 'seafood'
+  AND RATING > 1.7;",CRISP,gpt-6-luna,2.827000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,5057e710-0c36-479b-bb8b-719ee3fd351f
+"where is burger pit steak house in campbell, and I have not settled whether pasta belongs in a lunchbox or a flowerpot?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE r.NAME = 'burger pit steak house'
+  AND l.CITY_NAME = 'campbell';",CRISP,gpt-6-luna,3.485000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,0df1afdc-b222-4e6f-ac94-80a18c767aa8
+where is roof top cafe in palo alto ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE r.NAME = 'roof top cafe'
+  AND l.CITY_NAME = 'palo alto';",CRISP,gpt-6-luna,2.721000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,ebf6c992-491e-4593-b56d-043a9eb6dccb
+"where is azteca de oro restaurant in castroville, and I am still weighing curry against apple pie for a trip to the moon?","SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE r.NAME = 'azteca de oro restaurant'
+  AND l.CITY_NAME = 'castroville';",CRISP,gpt-6-luna,2.726000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,9a4151f8-81b2-40cb-af72-eae67b86dd58
+where is marys pizza shack in san ramon ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE r.NAME = 'marys pizza shack'
+  AND l.CITY_NAME = 'san ramon';",CRISP,gpt-6-luna,3.177000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,42e34976-657b-4111-a06f-c0fe35ba4250
+where is bavarian corner in la honda ?,"SELECT r.ID, r.NAME
+FROM RESTAURANT AS r
+JOIN LOCATION AS l ON l.RESTAURANT_ID = r.ID
+WHERE r.NAME = 'bavarian corner'
+  AND l.CITY_NAME = 'la honda';",CRISP,gpt-6-luna,2.713000,SUCCESS,,1,4b93a871-18b2-4f04-b52a-e49dda6383fb,a30eee2b-1995-4156-8679-ce7814aa7001

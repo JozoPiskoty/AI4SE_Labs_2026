@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="390" viewBox="0 0 760 390">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="380" y="24" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold">Exact-result accuracy by prompt framework</text>
+<line x1="80" y1="290.0" x2="700" y2="290.0" stroke="#d9e0e8"/>
+<text x="68" y="294.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">0%</text>
+<line x1="80" y1="240.0" x2="700" y2="240.0" stroke="#d9e0e8"/>
+<text x="68" y="244.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">20%</text>
+<line x1="80" y1="190.0" x2="700" y2="190.0" stroke="#d9e0e8"/>
+<text x="68" y="194.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">40%</text>
+<line x1="80" y1="140.0" x2="700" y2="140.0" stroke="#d9e0e8"/>
+<text x="68" y="144.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">60%</text>
+<line x1="80" y1="90.0" x2="700" y2="90.0" stroke="#d9e0e8"/>
+<text x="68" y="94.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">80%</text>
+<line x1="80" y1="40.0" x2="700" y2="40.0" stroke="#d9e0e8"/>
+<text x="68" y="44.0" text-anchor="end" font-family="Arial" font-size="12" fill="#445">100%</text>
+<rect x="135" y="220.7" width="105" height="69.3" rx="5" fill="#3b82f6"/>
+<text x="187.5" y="212.7" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">27.7%</text>
+<text x="187.5" y="313" text-anchor="middle" font-family="Arial" font-size="14">RTF</text>
+<text x="187.5" y="333" text-anchor="middle" font-family="Arial" font-size="11" fill="#445">43/155 correct</text>
+<rect x="325" y="220.7" width="105" height="69.3" rx="5" fill="#10b981"/>
+<text x="377.5" y="212.7" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">27.7%</text>
+<text x="377.5" y="313" text-anchor="middle" font-family="Arial" font-size="14">ICIO</text>
+<text x="377.5" y="333" text-anchor="middle" font-family="Arial" font-size="11" fill="#445">43/155 correct</text>
+<rect x="515" y="220.7" width="105" height="69.3" rx="5" fill="#f59e0b"/>
+<text x="567.5" y="212.7" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">27.7%</text>
+<text x="567.5" y="313" text-anchor="middle" font-family="Arial" font-size="14">CRISP</text>
+<text x="567.5" y="333" text-anchor="middle" font-family="Arial" font-size="11" fill="#445">43/155 correct</text>
+</svg>
