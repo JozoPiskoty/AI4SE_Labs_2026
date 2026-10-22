@@ -1,0 +1,203 @@
+{
+  "generated_at_utc": "2026-10-22T07:50:37.321705+00:00",
+  "input_dir": "data\\corpus",
+  "documents": [
+    {
+      "id": "conversations/conv_pines014_material_volume.eml",
+      "name": "conversations/conv_pines014_material_volume.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "conversations/conv_pines015_capacity_interface.eml",
+      "name": "conversations/conv_pines015_capacity_interface.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "conversations/conv_pines016_shelf_space.eml",
+      "name": "conversations/conv_pines016_shelf_space.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "conversations/conv_pines018_item_transfer.eml",
+      "name": "conversations/conv_pines018_item_transfer.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "conversations/conv_pines019_020_missing_intransit.eml",
+      "name": "conversations/conv_pines019_020_missing_intransit.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "conversations/conv_pines021_item_purging.eml",
+      "name": "conversations/conv_pines021_item_purging.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "conversations/conv_pines022_deletions.eml",
+      "name": "conversations/conv_pines022_deletions.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "conversations/conv_pines023_patron_characteristics.eml",
+      "name": "conversations/conv_pines023_patron_characteristics.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "conversations/conv_pines024_inactive_patrons.eml",
+      "name": "conversations/conv_pines024_inactive_patrons.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "early_draft_srs_galecia.txt",
+      "name": "early_draft_srs_galecia.txt",
+      "status": "loaded"
+    },
+    {
+      "id": "email_financial_reports.eml",
+      "name": "email_financial_reports.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "email_report_features.eml",
+      "name": "email_report_features.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "email_staff_login.eml",
+      "name": "email_staff_login.eml",
+      "status": "loaded"
+    },
+    {
+      "id": "evergreen_reference_2009.txt",
+      "name": "evergreen_reference_2009.txt",
+      "status": "loaded"
+    },
+    {
+      "id": "interview_cataloging_2009-05-08.txt",
+      "name": "interview_cataloging_2009-05-08.txt",
+      "status": "loaded"
+    },
+    {
+      "id": "interview_sysadmin_2009-05-10.txt",
+      "name": "interview_sysadmin_2009-05-10.txt",
+      "status": "loaded"
+    },
+    {
+      "id": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+      "name": "meeting_minutes/meeting_2009-03-15_minutes.txt",
+      "status": "loaded"
+    },
+    {
+      "id": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+      "name": "meeting_minutes/meeting_2009-07-20_minutes.txt",
+      "status": "loaded"
+    },
+    {
+      "id": "meeting_tech_subcommittee_2009-06-30.txt",
+      "name": "meeting_tech_subcommittee_2009-06-30.txt",
+      "status": "loaded"
+    },
+    {
+      "id": "survey_results_2009.txt",
+      "name": "survey_results_2009.txt",
+      "status": "loaded"
+    }
+  ],
+  "loading_issues": [],
+  "requirement_count": 346,
+  "rejected_candidate_count": 35,
+  "review_iterations": 0,
+  "validation_errors": [],
+  "validation_warnings": [
+    "Requirement candidate 17: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 17 has no reliably mapped source document; manual review is required.",
+    "Requirement candidate 18: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 19: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 20: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 21: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 22: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 24: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 30: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 31: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 32: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 33: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 34: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 68: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 68 has no reliably mapped source document; manual review is required.",
+    "Requirement candidate 69: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 69 has no reliably mapped source document; manual review is required.",
+    "Requirement candidate 70: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 70 has no reliably mapped source document; manual review is required.",
+    "Requirement candidate 71: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 72: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 73: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 73 has no reliably mapped source document; manual review is required.",
+    "Requirement candidate 74: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 75: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 77: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 78: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 78 has no reliably mapped source document; manual review is required.",
+    "Requirement candidate 79: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 79 has no reliably mapped source document; manual review is required.",
+    "Requirement candidate 80: One or more candidate source references could not be reliably mapped to an input document.",
+    "Requirement candidate 80 has no reliably mapped source document; manual review is required.",
+    "Rejected candidate 4: One or more candidate source references could not be reliably mapped to an input document."
+  ],
+  "review_findings": [
+    {
+      "issue": "Evidence insufficiency for candidate CAND-000018 (Item transfer batch utility).",
+      "repair_target": "human",
+      "evidence": [
+        "Candidate has no source_documents; evidence only textual assertion."
+      ],
+      "affected_requirement_ids": [
+        "DREQ-0017"
+      ],
+      "affected_candidate_refs": [
+        "CAND-000018"
+      ]
+    },
+    {
+      "issue": "Conflicting auto-revert policy: CAND-000029 describes event-based revert when items are checked out at destination; conflicting with DREQ-0026's intent.",
+      "repair_target": "human",
+      "evidence": [
+        "CAND-000029 evidence mentions revert on checkout; this conflicts with the narrative in DREQ-0026; no clear decision."
+      ],
+      "affected_requirement_ids": [
+        "DREQ-0026"
+      ],
+      "affected_candidate_refs": [
+        "CAND-000029"
+      ]
+    },
+    {
+      "issue": "Priority mismatch/ambiguity between last-copy reporting (CAND-000056/000058) and related flagging (CAND-000059).",
+      "repair_target": "human",
+      "evidence": [
+        "EXISTING WARNINGS note misaligned priorities between CAND-000056/000058 (P1) and CAND-000059 (P2)."
+      ],
+      "affected_requirement_ids": [
+        "DREQ-0053",
+        "DREQ-0054"
+      ],
+      "affected_candidate_refs": [
+        "CAND-000056",
+        "CAND-000058",
+        "CAND-000059"
+      ]
+    },
+    {
+      "issue": "Evidence for activity-report requirement CAND-000111 truncated; insufficient to determine exact expected metrics.",
+      "repair_target": "human",
+      "evidence": [
+        "The evidence is truncated: 'displaying' unknown fields."
+      ],
+      "affected_requirement_ids": [
+        "DREQ-0107"
+      ],
+      "affected_candidate_refs": [
+        "CAND-000111"
+      ]
+    }
+  ]
+}
